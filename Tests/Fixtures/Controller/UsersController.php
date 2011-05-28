@@ -32,30 +32,9 @@ class UsersController extends Controller
     public function lockUserAction($slug)
     {} // [PUT] /users/{slug}/lock
 
-    public function getUserCommentsAction($slug)
-    {} // [GET] /users/{slug}/comments
-
-    public function getUserCommentAction($slug, $id)
-    {} // [GET] /users/{slug}/comments/{id}
-
-    public function deleteUserCommentAction($slug, $id)
-    {} // [DELETE] /users/{slug}/comments/{id}
-
     public function newUsersAction()
     {} // [GET] /users/new
 
-    public function newUserCommentsAction($slug)
-    {} // [GET] /users/{slug}/comments/new
-
-    public function banUserAction($slug, $id)
-    {} // [PUT] /users/{slug}/ban
-
-    public function voteUserCommentAction($slug, $id)
-    {} // [PUT] /users/{slug}/comments/{id}/vote
-
     public function _userbarAction()
     {} // NO route
-
-    public function check_usernameUsersAction()
-    {} // [GET] /users/check_username
 }

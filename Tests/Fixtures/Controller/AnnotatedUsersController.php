@@ -83,7 +83,6 @@ class AnnotatedUsersController extends Controller
     public function cheadUserAction($slug)
     {} // [HEAD]    /users/{slug}/chead
 
-
     /**
      * @NoRoute
      */

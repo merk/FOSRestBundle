@@ -19,13 +19,4 @@ class UserTopicCommentsController extends Controller
 {
     public function getCommentsAction($slug, $title)
     {} // [GET] /users/{slug}/topics/{title}/comments
-
-    public function newCommentsAction($slug, $title)
-    {} // [GET] /users/{slug}/topics/{title}/comments/new
-
-    public function putCommentAction($slug, $title, $id)
-    {} // [PUT] /users/{slug}/topics/{title}/comments/{id}
-
-    public function banCommentAction($slug, $title, $id)
-    {} // [PUT] /users/{slug}/topics/{title}/comments/{id}/ban
 }

@@ -20,15 +20,6 @@ class UserTopicsController extends Controller
     public function getTopicsAction($slug)
     {} // [GET] /users/{slug}/topics
 
-    public function newTopicsAction($slug)
-    {} // [GET] /users/{slug}/topics/new
-
     public function getTopicAction($slug, $title)
     {} // [GET] /users/{slug}/topics/{title}
-
-    public function putTopicAction($slug, $title)
-    {} // [PUT] /users/{slug}/topics/{title}
-
-    public function hideTopicAction($slug, $title)
-    {} // [PUT] /users/{slug}/topics/{title}/hide
 }

@@ -37,7 +37,7 @@ class RestXmlCollectionLoaderTest extends LoaderTest
         foreach ($etalonRoutes as $name => $params) {
             $route = $collection->get($name);
 
-            $this->assertNotNull($route);
+            $this->assertNotNull($route, sprintf('route %s exists', $name));
             $this->assertEquals($params['pattern'], $route->getPattern());
             $this->assertEquals($params['method'], $route->getRequirement('_method'));
             $this->assertContains($params['controller'], $route->getDefault('_controller'));

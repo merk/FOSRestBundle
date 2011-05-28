@@ -8,11 +8,6 @@ get_user:
   controller:   ::getUserAction
   requirements: {_method: GET, slug: '[a-z]+'}
 
-get_user_comment:
-  pattern:      /users/{slug}/comments/{id}.{_format}
-  controller:   ::getUserCommentAction
-  requirements: {_method: GET, slug: '[a-z]+', id: '\d+'}
-
 rate_user:
   pattern:      /users/{slug}/rate.{_format}
   controller:   ::rateUserAction
