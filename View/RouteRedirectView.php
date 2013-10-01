@@ -28,8 +28,9 @@ class RouteRedirectView
      * @param mixed   $parameters
      * @param integer $statusCode
      * @param array   $headers
+     * @return View
      */
-    public static function create($route, array $parameters = array(), $statusCode = Codes::HTTP_CREATED, array $headers = array())
+    public static function create($route, array $parameters = array(), $statusCode = Codes::HTTP_FOUND, array $headers = array())
     {
         return View::create(null, $statusCode, $headers)->setRoute($route)->setRouteParameters($parameters);
     }

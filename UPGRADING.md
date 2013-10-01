@@ -6,6 +6,9 @@ list important BC breaks.
 
 ### upgrading from 0.13.1
 
+ * RouteRedirectView::create now defaults to using a status code HTTP_FOUND (302), which now matches the same behaviour
+   of RedirectView.
+
  * ExceptionController::showAction() doesn't have type hint on the $exception object anymore due to a BC change
    in symfony/symfony 2.3.5, see https://github.com/FriendsOfSymfony/FOSRestBundle/pull/565
 
